@@ -1,0 +1,65 @@
+# ===================================================================
+#      Professional .gitignore for Modern Web Development
+#
+# This file is carefully curated to ensure the repository remains
+# clean, secure, and focused on source code. It prevents common
+# generated files, sensitive data, and environment-specific
+# configurations from being committed to version control.
+# ===================================================================
+
+# Dependency directories
+# Although this project currently uses CDNs, this is a best practice
+# for any future dependency management (e.g., via npm or yarn).
+node_modules/
+bower_components/
+
+# Build & Distribution output
+# For when a build process (like Webpack, Vite, or Parcel) is introduced.
+dist/
+build/
+.parcel-cache/
+.next/
+out/
+
+# Logs
+# Prevent committing log files that are generated during development or runtime.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+# These files are specific to a running instance of an application.
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+# NEVER commit environment variables. This file contains sensitive data
+# like API keys, database credentials, etc. A `.env.example` should be
+# committed instead to show what variables are needed.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# IDE / Editor directories
+# These files are user-specific and should not be shared in a team.
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Operating System generated files
+# These files are created by the OS and are not part of the project source.
+.DS_Store
+Thumbs.db
+
+# Application-specific generated files
+# Ignore any user-specific data that might be exported from the app.
+*.json.bak
+*.csv
